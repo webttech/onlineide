@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<header id="header">
+   
+</header>
+<hr>
+<body id="body">
+    <div class="bottomnav">
+<ul>
+     <li><button id="openMenuBtn">Open Menu</button></li>
+     <li><button id="darkmood" onclick="darkmood()">darkmood</button></li>
+ 
+    
+   
+</ul>
+    </div>
+
+<!--center of the code-->
+
+
+
+ <!--html tutorial -->
+ <nav  class="menu-bar" id="leftMenu"> 
+   <button id="closeMenuBtn">Close Menu</button>
+    <h3>ONLINE IDE</h3>
+    <a href="#" onclick="showTopic('topic1')">HTML</a><br><br>
+    <a href="#" onclick="showTopic('topic2')">python</a><br><br>
+    <a href="#" onclick="showTopic('topic3')">java</a><br><br>
+    <a href="#" onclick="showTopic('topic4')">pygame</a><br><br>
+    <a href="#" onclick="showTopic('topic5')">Notepad</a><br><br>
+    
+ 
+  
+  
+
+
+  </nav>
+  
+  <div class="content">
+    <div id="topic1" class="topic active">
+       <center>
+        <div class="h">
+            <h2>HTML ONLINE CODE EDIT</h2>
+        </div>
+    </center>
+    <br>
+    <iframe src="https://trinket.io/embed/html/42c6515033" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        
+
+
+      
+    </div>
+    
+    <div id="topic2" class="topic">
+        <center>
+            <div class="h">
+                <h2>PYTHON ONLINE CODE EDIT</h2>
+            </div>
+        </center>
+        <br>
+        <iframe src="https://trinket.io/embed/python3/15941311cd" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+
+
+  
+          </div>
+
+    <div id="topic3" class="topic">
+
+
+        <center>
+            <div class="h">
+                <h2>JAVA ONLINE CODE EDIT</h2>
+            </div>
+        </center>
+        <br>
+        <iframe src="https://trinket.io/embed/java/09bd26c8ba" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+
+
+
+    
+</div>
+
+    <div id="topic4" class="topic">
+        <center>
+            <div class="h">
+                <h2>PYGAME ONLINE CODE EDIT</h2>
+            </div>
+        </center>
+        <br>
+        <iframe src="https://trinket.io/embed/pygame/470e4b1f2f" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+    </div>
+
+    <div id="topic5" class="topic">
+
+      <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .editor-container {
+            display: flex;
+        }
+        .code-editor,
+        .output {
+            width: 50%;
+            height: 400px;
+            overflow: auto;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+        .output {
+            background-color: #f0f0f0;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>HTML Compiler IDE</h1>
+        <div class="editor-container">
+            <div class="code-editor">
+                <textarea id="html-input" placeholder="Enter your HTML code here..." style="width: 100%; height: 100%;"></textarea>
+            </div>
+            <div class="output" id="output-container">
+                <!-- Output will be displayed here -->
+            </div>
+        </div>
+    
+        <script>
+            const htmlInput = document.getElementById('html-input');
+            const outputContainer = document.getElementById('output-container');
+    
+            htmlInput.addEventListener('input', function() {
+                const htmlCode = htmlInput.value;
+                outputContainer.innerHTML = htmlCode;
+            });
+        </script>
+   
+    </div>
+  
+  </div>
+<br>
+<br>
+<br>
+
+  <footer>
+    <div class="copyright">
+      <h2>Online IDE - Code Editor, Compiler, Interpreter</h2>
+      <p>Online IDE is a web-based tool powered by Trinket code editor. This tool can be used to learn, build, run, test your program.  Code and the output can be downloaded
+      </p>
+      <br>
+      <br>
+      
+      <h2>Features of this tool</h2>
+      <ul>
+        <li>Simple & Clean Design, Lightweight, Easy & Fast</li>
+        <li>Helpful for beginners to learn and practice programs</li>
+        <li>Options to Copy or Download the Output of the Program</li>
+        <li>Expandable Output Terminal</li>
+        <li>Coding sharing option helps you to save your code in cloud so that it can be accessed anytime and anywhere with internet</li>
+      </ul>
+    </div>
+    <div class="msg">
+      <msg><span1>copyright:</span1><span2>the tool</span2><span3> powered by Trinket code editor</span3></msg>
+    </div>
+  </footer>
+
+  
+  <style>
+
+    /*  content code */
+    .h{
+        margin: 0;
+        padding: 0;
+    }
+    .topic{
+      font-size:medium;
+      text-transform: lowercase;
+    }
+    .content h2{
+      font-size:30px;
+      padding:20px;
+      text-transform: capitalize;
+    }
+    iframe{
+      margin-left:18%;
+      margin-bottom:40px;
+    }
+    .content p{
+      padding:20px;
+      line-height: 20px;
+      font-size:20px;
+      text-transform: lowercase;
+    }
+    span{
+      font-weight:bold;
+      font-size: 20px;
+      padding:20px;
+
+    }
+   dt{
+    padding: 20px;
+    font-size:20px;
+    font-weight: bold;
+   }
+   dd{
+    line-height:20px;
+    font-size:20px;
+   }
+  .cmd{
+    margin-left:7%;
+    padding:20px;
+    line-height: 26px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+  }
+label{
+    font-weight: bold;
+    padding: 20px;
+    font-size: medium;
+}
+.bottomnav{
+  background-color: green;
+  border: 3px solid white;
+  margin: 3px;
+  border-radius:20px;
+}
+.copyright{
+  width: 50%;
+  margin-left:30%;
+  
+  
+}
+.msg{
+  
+  margin:30px;
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+}
+.msg msg{
+  margin-left: 30%;
+  letter-spacing:4px;
+}
+#darkmood{
+  margin-top: 6px;
+    border-radius:10px;
+    border: 1px solid white;
+    color: rgb(250, 250, 250);
+    cursor: pointer;
+    background-color: black;
+    transition: 0.5s;
+}
+#darkmood:hover{
+   color: black;
+   transition: 0.5s;
+}
+
+
+
+    /* finished content code */
+
+
+
+
+
+
+        *{
+        text-transform: capitalize;
+       
+    }
+
+ #leftMenu button{
+margin-bottom:12px;
+ }
+  
+    
+    nav{
+        width:15%;
+        float: left;
+        position: fixed;
+        overflow-y:auto ;
+        height:81%;
+        padding-left:29px ;
+        font-size:medium;
+        margin: 0;
+        border-radius: 10px;
+        background-color: bisque;
+        
+    }
+    .bottomnav a li{ 
+      padding:43px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+      
+    
+    }
+    #closeMenuBtn{
+     margin-left: 10px;
+      margin-top: 20px;
+      background-color:red;
+      color: white;
+      border-radius:30px;
+    }
+
+    
+    pre{
+        width: 30%;
+    }
+    
+    h3{
+        color: green;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration:none;
+        font-size: medium;
+        margin-left: 10px;
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+      
+       
+    }
+    nav a:active{
+      color: green;
+    }
+    .content{
+        width:80%;
+        float:right;
+        padding:5px;
+        margin-right:16%;
+        background-color: white;
+    }
+    ul li{
+      display: inline-block;
+    }
+    
+    ul button{
+        padding:10px 20px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+        margin-right: 20px;
+        border-radius:30px;
+        border: 3px solid white;
+        margin: 5px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+
+/* responsible */
+@media(max-width:500px){
+  nav{
+        padding: 15px;
+        width:30%;
+        float: left;
+        background-color: bisque;
+        position: fixed;
+        overflow-y:auto ;
+        height:80%;
+        padding-left:10px ;
+        font-size: x-small;
+        line-height:3px;
+       
+    }
+    .bottomnav a li{
+      padding:3px;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    iframe{
+    margin: 0;
+    padding: 0;
+    }
+    .content h2{
+      font-size:26px;
+      padding: 10px;
+      text-transform: capitalize;
+    }
+    .content p{
+      padding: 5px;
+      line-height: 20px;
+      font-size:15px;
+      text-transform: lowercase;
+    }
+    dt{
+    padding: 10px;
+    font-weight:14px;
+    font-size: 19px;
+   }
+   span{
+    font-size:19px ;
+   }
+   dd{
+    line-height:30px;
+    font-size: 15px;
+   }
+    h3{
+        color: green;
+        padding: 10px;
+    }
+    nav a{
+        text-decoration:none;
+        line-height: 26px;
+        margin-left: 10px;
+        
+        
+    }
+    nav a:hover{
+        background-color: rgb(224, 217, 217);
+       
+    }
+    .content{
+      width:97%;
+        float:right;
+        padding: 5px;
+        margin: 0;
+    }
+    a button{
+        padding:5px;
+        margin: 0;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        background-color: green;
+        cursor: pointer;
+        border-radius: 10px;
+
+    }
+.topic {
+  display: none;
+}
+.topic.active {
+  display: block;
+}
+.copyright{
+ margin: 0;
+ padding: 0;
+ width: 100%;
+}
+.msg{
+  margin:30px;
+  background-color: rgb(255, 0, 0);
+  color:rgb(255, 255, 255);
+  border-radius: 20px;
+  font-size:8px;
+}
+span2{
+  display: none;
+}
+.msg msg{
+ margin: 0;
+  
+}
+
+
+}
+
+/* responsible code finished */
+
+
+/* content code */
+
+.topic{
+      font-size: small;
+      text-transform: lowercase;
+    }
+    .content h2{
+      padding: 10px;
+    }
+    .content p{
+      padding: 10px;
+    }
+
+
+/* finised code */
+
+
+  </style>
+  </style>
+<script>
+
+  
+function showTopic(topicId) {
+// Hide all topics
+var topics = document.querySelectorAll('.topic');
+topics.forEach(function(topic) {
+  topic.classList.remove('active');
+});
+
+
+// Show the selected topic
+var selectedTopic = document.getElementById(topicId);
+selectedTopic.classList.add('active').close();
+}
+
+
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const leftMenu = document.getElementById('leftMenu');
+
+    openMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '0';
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+        leftMenu.style.left = '-200px';
+    });
+
+    function darkmood(){
+      let body=document.getElementById("body").style.backgroundColor="black";
+      let color=document.getElementById("body").style.color="white";
+     let h=document.querySelector("h2").style.color="red";
+     let menu=document.querySelector("#leftmenu").style.backgroundColor="black"
+
+
+    }
+
+</script>
+
+
+<!--finish center of the code-->
+
+
+
+    <!--footer code-->
+
+   
+</body>
+</html>
+<script>
+  function darkmood(){
+    let body=document.getElementById("body").style.backgroundColor="black";
+    let color=document.getElementById("body").style.color="white";
+    let head=document.querySelector("h2").style.color="red";
+    let h=document.querySelector(".h").style.backgroundColor="black";
+  let nav=document.querySelector("nav").style.backgroundColor="black";
+  }
+</script>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
